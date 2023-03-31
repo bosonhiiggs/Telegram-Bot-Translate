@@ -7,7 +7,7 @@ main_menu = ReplyKeyboardMarkup(
     keyboard=[
         [
             KeyboardButton(text='🟡 Изменить язык перевода 🟡'),
-            KeyboardButton(text='🔴 Изменить список из Избранного(Недоделано) 🔴'),
+            KeyboardButton(text='🔴 Изменить список из Избранного 🔴'),
         ],
     ],
     resize_keyboard=True,
