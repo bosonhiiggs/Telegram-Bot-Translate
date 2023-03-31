@@ -1,7 +1,7 @@
 import sqlite3
 
 
-async def register(user_id):
+async def register(user_id) -> bool:
     '''Регистрация пользователя'''
     connect = sqlite3.connect('db.db')
     cursor = connect.cursor()
@@ -28,7 +28,7 @@ async def register(user_id):
 
 
 
-async def show_lang(user_id):
+async def show_lang(user_id) -> list:
     '''Отправка данных о избранный языках пользователя'''
     connect = sqlite3.connect('db.db')
     cursor = connect.cursor()
@@ -39,7 +39,7 @@ async def show_lang(user_id):
     return data
 
 
-async def show_choose(user_id):
+async def show_choose(user_id) -> list:
     '''Отправка данных о выбранном языке'''
     connect = sqlite3.connect('db.db')
     cursor = connect.cursor()
@@ -50,7 +50,7 @@ async def show_choose(user_id):
     return data
 
 
-async def switch_choose(user_id, new_choose):
+async def switch_choose(user_id, new_choose) -> None:
     '''Сменя основного языка'''
     connect = sqlite3.connect('db.db')
     cursor = connect.cursor()
@@ -61,7 +61,7 @@ async def switch_choose(user_id, new_choose):
     # return new_choose
 
 
-async def change_famous(user_id, new_lang, old_lang):
+async def change_famous(user_id, new_lang, old_lang) -> None:
     '''Поменять избранное'''
     connect = sqlite3.connect('db.db')
     cursor = connect.cursor()
