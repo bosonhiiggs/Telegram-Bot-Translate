@@ -47,7 +47,7 @@ async def choose_source(message: Message):
     lang_lst = data_normal_view.split(', ')
 
     '''Вывод списка языков'''
-    if message.text == '🔴 Изменить список из Избранного(Недоделано) 🔴':
+    if message.text == '🔴 Изменить список из Избранного 🔴':
         await message.answer('🔍', reply_markup=ReplyKeyboardRemove())
         # await message.answer('Клавиатура 1:', reply_markup=all_lang_keyboard_1)
         # await message.answer('Клавиатура 2:', reply_markup=all_lang_keyboard_2)
