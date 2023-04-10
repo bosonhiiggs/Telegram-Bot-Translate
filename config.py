@@ -1,6 +1,6 @@
 from googletrans import LANGUAGES
 
-TOKEN = '6026494679:AAEvlPUEQ78tIxFs-8kDRD-Y15tTvvhOTIQ'
+TOKEN = ''
 
 
 '''Создание словарей для отображения'''
